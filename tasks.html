@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="tasks.css">
+    <link rel="stylesheet" href="themes.css">
+    <input type="hidden" id="taskId">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="tasks.html" class="active">Tasks</a>
+            <a href="stats.html">Stats</a>
+            <a href="store.html">Store</a>
+        </nav>
+    </header>
+    <main>
+        <div class="view">
+
+        </div>
+
+    </main>
+    <div class="row">
+        <div class="column middle">
+            <h2>Available Tasks</h2>
+            <div class="task-list" id="task-list">
+
+            </div>
+        </div>
+        <div class="column ">
+            <div class="view" id="taskDetails">
+                <h2>Task Details</h2>
+                <div class="details-content">
+                    <h3 id="taskTitle">Select a task to see details</h3>
+                    <p id="taskDescription">Task details will appear here.</p>
+                    <div class="task-actions">
+                        <input type="checkbox" id="taskAchieved" style="display: none;">
+        <button id="editButton" onclick="toggleEdit()">Edit</button>
+        <button onclick="deleteTask()">Delete</button>
+        <button onclick="toggleAchieved()">Mark as Achieved</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="tasks.js"></script>>
+</body>
+
+</html>
